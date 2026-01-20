@@ -73,22 +73,10 @@ exports.authMiddleware = async (req, res, next) => {
       clockTolerance: 30,
     });
 
-    if (
-      !decodedToken?.user?.id ||
-      !decodedToken?.role ||
-      !decodedToken?.iat ||
-      !decodedToken?.exp
-    ) {
+    if (!decodedToken?.user?.id || !decodedToken?.role || !decodedToken?.iat) {
       return res.status(401).json({
         success: false,
         message: "Invalid Token Structure",
-      });
-    }
-
-    if (decodedToken.exp < Date.now() / 1000) {
-      return res.status(401).json({
-        success: false,
-        message: "Token has expired",
       });
     }
 
@@ -150,13 +138,6 @@ exports.authMiddleware = async (req, res, next) => {
 
     next();
   } catch (error) {
-    if (error.name === "TokenExpiredError") {
-      return res.status(401).json({
-        success: false,
-        message: "Token expired",
-      });
-    }
-
     if (error.name === "JsonWebTokenError") {
       return res.status(401).json({
         success: false,

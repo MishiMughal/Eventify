@@ -234,7 +234,6 @@ exports.loginUser = async (req, res) => {
       user: { id: updatedUser.id, email: updatedUser.email },
       sessionId,
       iat: Math.floor(Date.now() / 1000),
-      exp: Math.floor(Date.now() / 1000) + 60 * 60,
     };
 
     jwt.sign(
@@ -263,7 +262,6 @@ exports.loginUser = async (req, res) => {
             email: updatedUser.email,
           },
           token,
-          expiresIn: 3600,
         });
       }
     );

@@ -198,7 +198,6 @@ exports.loginOrganizer = async (req, res) => {
       user: { id: organizer._id, email: organizer.email },
       sessionId,
       iat: Math.floor(Date.now() / 1000),
-      exp: Math.floor(Date.now() / 1000) + 60 * 60,
     };
 
     jwt.sign(
@@ -226,7 +225,6 @@ exports.loginOrganizer = async (req, res) => {
             email: organizer.email,
           },
           token,
-          expiresIn: 3600,
         });
       }
     );

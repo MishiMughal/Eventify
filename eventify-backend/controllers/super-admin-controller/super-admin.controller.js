@@ -220,8 +220,7 @@ exports.loginSuperAdmin = async (req, res) => {
       role: "SUPERADMIN",
       user: { id: updatedUser.id, email: updatedUser.email },
       sessionId,
-      iat: Math.floor(Date.now() / 1000),
-      exp: Math.floor(Date.now() / 1000) + 60 * 60,
+      iat: Math.floor(Date.now() / 1000),      
     };
 
     jwt.sign(
@@ -249,8 +248,7 @@ exports.loginSuperAdmin = async (req, res) => {
             userName: updatedUser.userName,
             email: updatedUser.email,
           },
-          token,
-          expiresIn: 3600,
+          token,          
         });
       }
     );
