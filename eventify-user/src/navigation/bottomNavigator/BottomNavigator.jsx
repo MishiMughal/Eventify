@@ -119,8 +119,8 @@ const BottomNavigator = () => {
               focused={focused}
               source={
                 focused
-                  ? require('../../assets/navigatorIcons/event-filled.png')
-                  : require('../../assets/navigatorIcons/event.png')
+                  ? require('../../assets/navigatorIcons/organizer-filled.png')
+                  : require('../../assets/navigatorIcons/organizer.png')
               }
             />
           ),
