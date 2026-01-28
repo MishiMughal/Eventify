@@ -750,7 +750,6 @@ const styles = StyleSheet.create({
   header: {
     paddingHorizontal: PADDING,
     paddingTop: Platform.OS === 'ios' ? 60 : 40,
-    paddingBottom: 16,
   },
   title: {
     fontSize: 32,
@@ -779,7 +778,7 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingHorizontal: PADDING,
-    paddingBottom: 40,
+    paddingBottom: 120,
   },
   card: {
     backgroundColor: '#fff',
@@ -822,6 +821,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ea580c',
     padding: 10,
     borderRadius: 12,
+    marginBottom: 20
   },
   ticketRow: {
     flexDirection: 'row',

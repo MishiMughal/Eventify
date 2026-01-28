@@ -177,7 +177,7 @@ const Profile = () => {
             <ProfileScreenCard
               title="Delete My Profile"
               iconName="trash"
-              iconColor={theme.colors.error}
+              iconColor={theme.colors.white}
               rightIcon="chevron-forward"
               onPressFunction={handleDeleteAccountModal}
             />

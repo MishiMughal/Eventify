@@ -9,6 +9,8 @@ const OrganizerDetails = () => {
   const [organizer, setOrganizer] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  console.log('Organizer', organizer)
+
   useEffect(() => {
     setTimeout(() => {
       setOrganizer(location.state?.organizer || null);
