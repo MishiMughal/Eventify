@@ -107,8 +107,8 @@ const CreateEvent = () => {
 
   const typeOptions = useMemo(
     () => [
-      {label: 'City', value: 'CITY'},
-      {label: 'Out of City', value: 'OUT_OF_CITY'},
+      {label: 'Public', value: 'PUBLIC'},
+      {label: 'Private', value: 'PRIVATE'},
     ],
     [],
   );

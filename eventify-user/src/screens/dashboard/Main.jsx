@@ -41,15 +41,36 @@ const Home = ({navigation}) => {
 
   // Category config
   const categoryConfig = {
-    CONCERT: {name: 'Concert', icon: 'musical-notes-outline', color: '#E74C3C'},
-    BUSINESS: {name: 'Business', icon: 'business-outline', color: '#4A90E2'},
-    COMEDY: {name: 'Comedy', icon: 'happy-outline', color: '#F39C12'},
-    EXHIBITION: {name: 'Exhibition', icon: 'images-outline', color: '#9B59B6'},
-    SPORTS: {name: 'Sports', icon: 'basketball-outline', color: '#27AE60'},
-    WORKSHOP: {name: 'Workshop', icon: 'school-outline', color: '#34495E'},
-    FOOD: {name: 'Food', icon: 'restaurant-outline', color: '#E67E22'},
-    ART: {name: 'Art', icon: 'color-palette-outline', color: '#8E44AD'},
-    DEFAULT: {name: 'Event', icon: 'calendar-outline', color: '#95A5A6'},
+    CONCERT: {
+      name: 'Concert',
+      icon: 'musical-notes-outline',
+      color: '#E74C3C',
+    },
+    SEMINAR: {
+      name: 'Seminar',
+      icon: 'mic-outline',
+      color: '#4A90E2',
+    },
+    LIVE_SHOW: {
+      name: 'Live Show',
+      icon: 'videocam-outline',
+      color: '#F39C12',
+    },
+    THEATER: {
+      name: 'Theater',
+      icon: 'film-outline',
+      color: '#9B59B6',
+    },
+    CULTURAL: {
+      name: 'Cultural',
+      icon: 'people-outline',
+      color: '#27AE60',
+    },
+    DEFAULT: {
+      name: 'Event',
+      icon: 'calendar-outline',
+      color: '#95A5A6',
+    },
   };
 
   // Extract unique categories

@@ -29,7 +29,7 @@ const eventSchema = new mongoose.Schema(
     },
     type: {
       type: String,
-      enum: ["CITY", "OUT_OF_CITY"],
+      enum: ["PUBLIC", "PRIVATE"],
       required: true,
     },
     venue: {

@@ -283,8 +283,8 @@ const CreateEvent = () => {
                   id="event-type"
                   label="Select Event Type"
                   dropdownOptions={[
-                    { value: "CITY", label: "City" },
-                    { value: "OUT_OF_CITY", label: "Out of City" },
+                    { value: "PUBLIC", label: "Public" },
+                    { value: "PRIVATE", label: "Private" },
                   ]}
                   selectedValue={type}
                   onValueChange={(e) => setType(e.target.value)}
